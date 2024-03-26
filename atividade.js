@@ -68,6 +68,31 @@
         cada parágrafo e adicionando uma classe CSS para destacá-los.
             
      . document.getElementsByClassName();
+
+        <div class="container">
+            <h2 class="titulo">Título 1</h2>
+            <p class="paragrafo">Este é o primeiro parágrafo.</p>
+        </div>
+    
+        <div class="container">
+            <h2 class="titulo">Título 2</h2>
+            <p class="paragrafo">Este é o segundo parágrafo.</p>
+        </div>
+    
+        <script>
+            var containers = document.getElementsByClassName("container");
+            
+            for (var i = 0; i < containers.length; i++) {
+                var container = containers[i];
+                container.style.backgroundColor = "lightblue";
+            }
+        </script>
+
+            Explicação: document.getElementsByClassName("container") seleciona todos 
+        os elementos com a classe "container" e retorna uma lista de nós. Em seguida, 
+        iteramos sobre essa lista usando um loop for e fazemos algo com cada elemento, 
+        como mudar sua cor de fundo para lightblue.
+            
      . document.querySelector();
      . document.querySelectorAll();
 
